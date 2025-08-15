@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@400..700&family=Pacifico&family=Rubik+Spray+Paint&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #1c1c1c;
+  --text-color: #fff;
+  --primary-color: #4fc3f7;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+/* nav img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+} */
+nav .navbar-brand {
+  background: linear-gradient(90.54deg, #4fc3f7 0.46%, #ffffff 91.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li a,
+.about .resume-buutton a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+.navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar ul li a.active {
+  color: var(--primary-color);
+}
+nav .contact-me-buutton {
+  background: linear-gradient(90deg, #4fc3f7 0.46%, #ffffff 91.25%);
+  border-radius: 0.5rem;
+  padding: 2px;
+  display: inline-block;
+}
+nav .contact-me-buutton a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  background-color: var(--bg-color);
+  font-size: 1.1rem;
+  padding: 0.3rem;
+
+  border-radius: calc(0.5rem - 2px);
+}
+.contact-me-buutton a:hover,
+.resume-buutton a:hover {
+  background-color: var(--primary-color);
+}
+.home .container,
+.my-work,
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.home img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.home .home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  text-align: center;
+}
+.home .home-text h1,
+.about .heading h2,
+.my-work .heading h2,
+.projects .heading h2,
+.contact .heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.home .home-text h5 {
+  font-weight: 700;
+  background: linear-gradient(90.54deg, #4fc3f7 0.46%, #ffffff 91.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+}
+
+.about .heading h5,
+.my-work .heading h5,
+.projects .heading h5,
+.contact .heading h5 {
+  font-weight: 700;
+  background: linear-gradient(90.54deg, #4fc3f7 0.46%, #ffffff 91.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 15px;
+}
+.home .home-text p,
+.about .about-text,
+.my-work .heading,
+.projects .heading {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+
+  text-align: center;
+  width: 70%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.about .heading {
+  font-weight: 700;
+  text-align: center;
+}
+
+.about .resume-buutton a,
+.home .contact-me-buutton a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary-color);
+  font-size: 1.1rem;
+  padding: 0.6rem;
+
+  border-radius: 50px;
+}
+
+.services,
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 7rem;
+}
+
+.services .service-card {
+  background: linear-gradient(
+    121.9deg,
+    rgba(28, 28, 28, 0.5) 0%,
+    #050505 96.81%
+  );
+  mix-blend-mode: plus-lighter;
+
+  border: 1px solid #2b2b2b;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+.services .service-card h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.services .service-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.projects-cards .project-card .project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+.projects-cards .project-card .project-text {
+  position: relative;
+}
+.projects-cards .project-card h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.projects-card .project-card p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.projects-cards .project-card .project-text a {
+  position: absolute;
+  top: 48%;
+  left: 87%;
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.contact .heading {
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact .contact-form {
+  width: 70%;
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 15px;
+}
+.contact .contact-form input,
+.contact .contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--bg-color);
+  border: 1px solid #2b2b2b;
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.contact .contact-form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.gmail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+.gmail p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.gmail button {
+  padding: 1rem;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+/* media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 678px) {
+  .home .home-text p,
+  .about .about-text {
+    width: 100%;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+  .services,
+  .projects-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects-cards .project-card .project-text a {
+    position: absolute;
+    top: 48%;
+    left: 90%;
+    text-decoration: none;
+  }
+  .contact .contact-form {
+    width: 100%;
+  }
+  .gmail {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 678px) and (max-width: 1000px) {
+  .services,
+  .projects-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact .contact-form {
+    width: 100%;
+  }
+}
