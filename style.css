@@ -200,7 +200,8 @@ nav .contact-me-buutton a {
 
 .projects-cards .project-card .project-img img {
   width: 100%;
-  height: 100%;
+  height: 300px;
+  object-position: center;
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
@@ -213,9 +214,10 @@ nav .contact-me-buutton a {
   font-weight: 400;
   margin: 1rem 0;
 }
-.projects-card .project-card p {
+.project-text p {
   font-size: 1rem;
   font-weight: 400;
+  max-width: 220px;
 }
 .projects-cards .project-card .project-text a {
   position: absolute;
@@ -289,6 +291,34 @@ nav .contact-me-buutton a {
   transition: all 0.3s ease;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer .footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+.footer .footer-icons a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.footer .footer-icons a i {
+  border: 1px solid var(--text-color);
+  padding: 0.3rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
 /* media query */
 
 /* Extra small devices (phones, 600px and down) */
@@ -317,6 +347,22 @@ nav .contact-me-buutton a {
   .gmail {
     flex-direction: column;
     margin-top: 2rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .footer .footer-icons {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 10px;
+   
+    
+  }
+  .footer .footer-icons a i {
+    font-size: 1.5rem;
   }
 }
 

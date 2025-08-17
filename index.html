@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./IMG-20250713-WA0002.jpg" />
+    <link rel="icon" href="./assets/IMG-20250713-WA0002.jpg" />
     <title>Hazem Azmy Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -15,11 +15,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark mt-4">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="position: fixed; width: 100%; z-index: 100; top: 0"
+    >
       <div class="container">
         <!-- <img src="./IMG-20250713-WA0002.jpg" alt="" /> -->
         <a class="navbar-brand" href="#">Hazem Azmy</a>
@@ -41,29 +44,31 @@
               <a class="active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#">Services</a>
+              <a href="#my-work">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#">Resume</a>
+              <a href="#about">Resume</a>
             </li>
           </ul>
         </div>
         <div class="contact-me-buutton d-none d-lg-block me-5">
-          <a href="https://linktr.ee/hazemazmy8889" target="_blank">Contact Me</a>
+          <a href="https://linktr.ee/hazemazmy8889" target="_blank"
+            >Contact Me</a
+          >
         </div>
       </div>
     </nav>
     <!-- Home -->
-    <div class="home">
+    <div class="home" id="home">
       <div class="container">
         <div class="home-img">
-          <img src="./IMG_20231006_132623_578.jpg" alt="" />
+          <img src="./assets/IMG_20231006_132623_578.jpg" alt="" />
         </div>
         <div class="home-text">
           <h1>Hazem Azmy</h1>
@@ -76,14 +81,16 @@
             building dynamic web applications using React.
           </p>
           <div class="contact-me-buutton mt-4">
-            <a href="#">Contact Me</a>
+            <a href="https://linktr.ee/hazemazmy8889" target="_blank"
+              >Contact Me</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- About -->
     <div class="container">
-      <div class="about">
+      <div class="about" id="about">
         <div class="heading">
           <h2>About Me</h2>
           <h5>Go to Know Me</h5>
@@ -105,17 +112,25 @@
             committed to delivering high-quality solutions that meet your
             project goals.
           </p>
+          <p>
+            I am currently pursuing my Bachelor's degree in
+            <b>Computer Science at Matrouh University</b> (October 2022 – July
+            2026).
+          </p>
           <p>When I'm not coding, I enjoy hiking and exploring new trails.</p>
         </div>
+
         <div class="resume-buutton mt-4">
-          <a href="#">Download Resume</a>
+          <a href="assets/Hazem Khaled CV.pdf" download="Hazem Khaled CV.pdf"
+            >Download Resume</a
+          >
         </div>
       </div>
     </div>
 
     <!--My work-->
     <div class="container">
-      <div class="my-work">
+      <div class="my-work" id="my-work">
         <div class="heading">
           <h2>What I do</h2>
           <h5>My Services</h5>
@@ -288,7 +303,7 @@
 
     <!--projects-->
     <div class="container">
-      <div class="projects">
+      <div class="projects" id="projects">
         <div class="heading">
           <h2>Projects</h2>
           <h5>Some of my Work</h5>
@@ -296,222 +311,15 @@
         <div class="projects-cards">
           <div class="project-card">
             <div class="project-img">
-              <img src="./IMG-20250713-WA0002.jpg" alt="" />
+              <img src="./assets/Screenshot 2025-08-17 170737.png" alt="" />
             </div>
             <div class="project-text">
-              <h3>Project Name</h3>
-              <p>Project description</p>
-              <a href="">
-                <svg
-                  width="38"
-                  height="39"
-                  viewBox="0 0 38 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="37.666"
-                    height="37.666"
-                    rx="18.833"
-                    transform="matrix(-1 0 0 1 37.6666 0.667236)"
-                    fill="#4FC3F7"
-                  />
-                  <path
-                    d="M25.4254 11.4961L12.2422 24.6792"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M25.4254 21.1668V11.4961H15.7546"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-img">
-              <img src="./IMG-20250713-WA0002.jpg" alt="" />
-            </div>
-            <div class="project-text">
-              <h3>Project Name</h3>
-              <p>Project description</p>
-              <a href="">
-                <svg
-                  width="38"
-                  height="39"
-                  viewBox="0 0 38 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="37.666"
-                    height="37.666"
-                    rx="18.833"
-                    transform="matrix(-1 0 0 1 37.6666 0.667236)"
-                    fill="#4FC3F7"
-                  />
-                  <path
-                    d="M25.4254 11.4961L12.2422 24.6792"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M25.4254 21.1668V11.4961H15.7546"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-img">
-              <img src="./IMG-20250713-WA0002.jpg" alt="" />
-            </div>
-            <div class="project-text">
-              <h3>Project Name</h3>
-              <p>Project description</p>
-              <a href="">
-                <svg
-                  width="38"
-                  height="39"
-                  viewBox="0 0 38 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="37.666"
-                    height="37.666"
-                    rx="18.833"
-                    transform="matrix(-1 0 0 1 37.6666 0.667236)"
-                    fill="#4FC3F7"
-                  />
-                  <path
-                    d="M25.4254 11.4961L12.2422 24.6792"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M25.4254 21.1668V11.4961H15.7546"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-img">
-              <img src="./IMG-20250713-WA0002.jpg" alt="" />
-            </div>
-            <div class="project-text">
-              <h3>Project Name</h3>
-              <p>Project description</p>
-              <a href="">
-                <svg
-                  width="38"
-                  height="39"
-                  viewBox="0 0 38 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="37.666"
-                    height="37.666"
-                    rx="18.833"
-                    transform="matrix(-1 0 0 1 37.6666 0.667236)"
-                    fill="#4FC3F7"
-                  />
-                  <path
-                    d="M25.4254 11.4961L12.2422 24.6792"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M25.4254 21.1668V11.4961H15.7546"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-img">
-              <img src="./IMG-20250713-WA0002.jpg" alt="" />
-            </div>
-            <div class="project-text">
-              <h3>Project Name</h3>
-              <p>Project description</p>
-              <a href="">
-                <svg
-                  width="38"
-                  height="39"
-                  viewBox="0 0 38 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="37.666"
-                    height="37.666"
-                    rx="18.833"
-                    transform="matrix(-1 0 0 1 37.6666 0.667236)"
-                    fill="#4FC3F7"
-                  />
-                  <path
-                    d="M25.4254 11.4961L12.2422 24.6792"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M25.4254 21.1668V11.4961H15.7546"
-                    stroke="white"
-                    stroke-width="1.41248"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-img">
-              <img src="./IMG-20250713-WA0002.jpg" alt="" />
-            </div>
-            <div class="project-text">
-              <h3>Project Name</h3>
-              <p>Project description</p>
-              <a href="">
+              <h3>Mia Italiano</h3>
+              <p>Present Menue for Pizza Restaurants</p>
+              <a
+                href="https://hazemkhaled551.github.io/Mia-italiano/"
+                target="_blank"
+              >
                 <svg
                   width="38"
                   height="39"
@@ -552,20 +360,23 @@
 
     <!--contact-->
     <div class="container">
-      <div class="contact">
+      <div class="contact" id="contact">
         <div class="heading">
           <h2>Contact Me</h2>
           <h5>Get In Touch</h5>
+          <div id="status"></div>
         </div>
         <div class="contact-form">
-          <form action="">
+          <form id="contact-form">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
               <input
                 type="text"
                 class="form-control bg-dark text-white"
                 id="name"
+                name="name"
                 placeholder="Full Name"
+                required
               />
             </div>
             <div class="mb-3">
@@ -574,7 +385,9 @@
                 type="email"
                 class="form-control bg-dark text-white"
                 id="email"
+                name="email"
                 placeholder="name@example.com"
+                required
               />
             </div>
             <div class="mb-3">
@@ -582,7 +395,9 @@
               <textarea
                 class="form-control bg-dark text-white"
                 id="message"
+                name="message"
                 rows="8"
+                required
               ></textarea>
             </div>
             <div class="col-12 w-100">
@@ -640,14 +455,31 @@
         </div>
       </div>
     </div>
-
+    <hr />
     <!--footer-->
     <div class="container">
       <div class="footer">
         <div class="footer-text">
-          <p>Copyright &copy; 2023 All Rights Reserved</p>
+          <p>Copyright © 2025 Hazem Azmy</p>
         </div>
-        <div class="footer-icons"></div>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/share/1CfMe51SWu/" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hazem-khaled-b139ba356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/hazemkhaled551" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/haze.m8892?igsh=MThlMzB1eHEycXhzZg=="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
       </div>
     </div>
 
@@ -656,5 +488,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
