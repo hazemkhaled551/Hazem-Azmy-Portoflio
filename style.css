@@ -1,26 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@400..700&family=Pacifico&family=Rubik+Spray+Paint&display=swap");
+
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Root Variables */
 :root {
   --bg-color: #1c1c1c;
   --text-color: #fff;
   --primary-color: #4fc3f7;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 1rem;
+}
+
+/* Body */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
 }
 
-/* nav img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-} */
+/* Navbar */
 nav .navbar-brand {
   background: linear-gradient(90.54deg, #4fc3f7 0.46%, #ffffff 91.25%);
   -webkit-background-clip: text;
@@ -33,13 +47,11 @@ nav .navbar-brand {
   justify-content: space-between;
   align-items: center;
 }
-
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
-
 .navbar ul li a,
 .about .resume-buutton a {
   text-decoration: none;
@@ -50,7 +62,6 @@ nav .navbar-brand {
 .navbar ul li a:hover {
   color: var(--primary-color);
 }
-
 .navbar ul li a.active {
   color: var(--primary-color);
 }
@@ -63,18 +74,18 @@ nav .contact-me-buutton {
 nav .contact-me-buutton a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
   background-color: var(--bg-color);
   font-size: 1.1rem;
   padding: 0.3rem;
-
   border-radius: calc(0.5rem - 2px);
+  transition: all 0.3s ease;
 }
 .contact-me-buutton a:hover,
 .resume-buutton a:hover {
   background-color: var(--primary-color);
 }
+
+/* Home */
 .home .container,
 .my-work,
 .projects {
@@ -88,10 +99,9 @@ nav .contact-me-buutton a {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  object-position: center;
   object-fit: cover;
+  object-position: center;
 }
-
 .home .home-text {
   display: flex;
   flex-direction: column;
@@ -104,29 +114,18 @@ nav .contact-me-buutton a {
 .about .heading h2,
 .my-work .heading h2,
 .projects .heading h2,
-.contact .heading h2 {
+.contact .heading h2,
+.skills .heading h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-
 .home .home-text h5 {
   font-weight: 700;
-  background: linear-gradient(90.54deg, #4fc3f7 0.46%, #ffffff 91.25%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 20px;
-}
-
-.about .heading h5,
-.my-work .heading h5,
-.projects .heading h5,
-.contact .heading h5 {
-  font-weight: 700;
   background: linear-gradient(90.54deg, #4fc3f7 0.46%, #ffffff 91.25%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 15px;
 }
 .home .home-text p,
 .about .about-text,
@@ -135,11 +134,11 @@ nav .contact-me-buutton a {
   font-size: 1rem;
   font-weight: 400;
   line-height: 2;
-
   text-align: center;
   width: 70%;
 }
 
+/* About */
 .about {
   display: flex;
   flex-direction: column;
@@ -151,20 +150,29 @@ nav .contact-me-buutton a {
   font-weight: 700;
   text-align: center;
 }
-
+.about .heading h5,
+.my-work .heading h5,
+.projects .heading h5,
+.contact .heading h5,
+.skills .heading h5 {
+  font-weight: 700;
+  font-size: 15px;
+  background: linear-gradient(90.54deg, #4fc3f7 0.46%, #ffffff 91.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .about .resume-buutton a,
 .home .contact-me-buutton a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
   border: 1px solid var(--primary-color);
   font-size: 1.1rem;
   padding: 0.6rem;
-
   border-radius: 50px;
+  transition: all 0.3s ease;
 }
 
+/* Services & Projects */
 .services,
 .projects-cards {
   display: grid;
@@ -172,19 +180,17 @@ nav .contact-me-buutton a {
   gap: 1rem;
   margin-top: 7rem;
 }
-
 .services .service-card {
   background: linear-gradient(
     121.9deg,
     rgba(28, 28, 28, 0.5) 0%,
     #050505 96.81%
   );
-  mix-blend-mode: plus-lighter;
-
   border: 1px solid #2b2b2b;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: plus-lighter;
   transition: all 0.3s ease;
 }
 .services .service-card h3 {
@@ -198,10 +204,10 @@ nav .contact-me-buutton a {
   margin-bottom: 1rem;
 }
 
+/* Project Cards */
 .projects-cards .project-card .project-img img {
   width: 100%;
   height: 300px;
-  object-position: center;
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
@@ -226,6 +232,7 @@ nav .contact-me-buutton a {
   text-decoration: none;
 }
 
+/* Contact */
 .contact {
   display: flex;
   flex-direction: column;
@@ -238,7 +245,6 @@ nav .contact-me-buutton a {
   font-weight: 400;
   text-align: center;
 }
-
 .contact .contact-form {
   width: 70%;
   margin-top: 2rem;
@@ -255,7 +261,6 @@ nav .contact-me-buutton a {
   border-radius: 5px;
   color: var(--text-color);
 }
-
 .contact .contact-form button {
   width: 100%;
   padding: 1rem;
@@ -267,7 +272,12 @@ nav .contact-me-buutton a {
   font-weight: 400;
   transition: all 0.3s ease;
 }
+.contact .contact-form button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
 
+/* Gmail Section */
 .gmail {
   width: 100%;
   display: flex;
@@ -279,7 +289,6 @@ nav .contact-me-buutton a {
   font-size: 2rem;
   font-weight: 400;
 }
-
 .gmail button {
   padding: 1rem;
   background-color: #333;
@@ -291,12 +300,12 @@ nav .contact-me-buutton a {
   transition: all 0.3s ease;
 }
 
+/* Footer */
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .footer p {
   font-size: 1rem;
   font-weight: 400;
@@ -317,11 +326,44 @@ nav .contact-me-buutton a {
   transition: all 0.3s ease-in-out;
 }
 
+/* Skills */
+.skills {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.skills .skills-cards {
+  margin-top: 3rem;
+}
+.skills .skills-cards .skill-card {
+  background: linear-gradient(
+    121.9deg,
+    rgba(28, 28, 28, 0.5) 0%,
+    #050505 96.81%
+  );
+  border: 1px solid #2b2b2b;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: plus-lighter;
+  transition: all 0.3s ease;
+}
+.skill-card h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
 
-
-/* media query */
-
-/* Extra small devices (phones, 600px and down) */
+/* Media Queries */
 @media (max-width: 678px) {
   .home .home-text p,
   .about .about-text {
@@ -332,14 +374,11 @@ nav .contact-me-buutton a {
   }
   .services,
   .projects-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
   .projects-cards .project-card .project-text a {
-    position: absolute;
     top: 48%;
     left: 90%;
-    text-decoration: none;
   }
   .contact .contact-form {
     width: 100%;
@@ -349,31 +388,22 @@ nav .contact-me-buutton a {
     margin-top: 2rem;
   }
   .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column-reverse;
   }
   .footer .footer-icons {
-    display: flex;
     gap: 2rem;
     margin-bottom: 10px;
-   
-    
   }
   .footer .footer-icons a i {
     font-size: 1.5rem;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 678px) and (max-width: 1000px) {
   .services,
   .projects-cards {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
   .contact .contact-form {
     width: 100%;
   }
